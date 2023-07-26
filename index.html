@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web Developer for hire" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta
+      name="description"
+      content="Web Developer, photography, artist for hire"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Art" />
     <meta name="author" content="Robert Guerra" />
     <title>Robert Guerra - Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
     <!--
     - favicon
@@ -79,7 +86,7 @@
               <div class="contact-info">
                 <p class="contact-title">Email</p>
 
-                <a href="mailto:richard@example.com" class="contact-link"
+                <a href="mailto:rmguerra101.com" class="contact-link"
                   >rmguerra101@gmail.com</a
                 >
               </div>
@@ -711,7 +718,7 @@
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Applications</button>
+                <button data-filter-btn>Photography</button>
               </li>
 
               <li class="filter-item">
@@ -740,7 +747,7 @@
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Applications</button>
+                  <button data-select-item>Photography</button>
                 </li>
 
                 <li class="select-item">
@@ -762,13 +769,13 @@
                     </div>
 
                     <img
-                      src="./assets/images/project-1.jpg"
+                      src="./assets/images/1stWebsite copy.jpg"
                       alt="finance"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Finance</h3>
+                  <h3 class="project-title">My First Website</h3>
 
                   <p class="project-category">Web development</p>
                 </a>
@@ -825,24 +832,28 @@
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="applications"
+                data-category="photography"
               >
-                <a href="#">
+                <a
+                  href="assets/images/Sun3.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Sunbeam"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
+                      src="./assets/images/Sun3.jpg"
+                      alt="Picture of Sunbeam"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Brawlhalla</h3>
+                  <h3 class="project-title">Sunbeam</h3>
 
-                  <p class="project-category">Applications</p>
+                  <p class="project-category">Photography</p>
                 </a>
               </li>
 
@@ -921,24 +932,84 @@
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="applications"
+                data-category="photography"
               >
-                <a href="#">
+                <a
+                  href="assets/images/concreteversuslight.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Concrete Light"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="./assets/images/project-8.jpg"
+                      src="./assets/images/concreteversuslight.jpg"
                       alt="task manager"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Task Manager</h3>
+                  <h3 class="project-title">Concrete Light</h3>
 
-                  <p class="project-category">Applications</p>
+                  <p class="project-category">Photography</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="photography"
+              >
+                <a
+                  href="assets/images/leaves1.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Playing in the Leaves"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/leaves1.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Playing in the Leaves</h3>
+
+                  <p class="project-category">Photography</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="photography"
+              >
+                <a
+                  href="assets/images/Childsplay.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Running Free"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Childsplay.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Running Free</h3>
+
+                  <p class="project-category">Photography</p>
                 </a>
               </li>
 
@@ -1246,5 +1317,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox='gallery']", {
+        // Your custom options
+      });
+    </script>
   </body>
 </html>
